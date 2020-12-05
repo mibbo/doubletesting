@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install
 before_script:
-  - jscover
+  - cat package.json
 script:
   - npm test
 after_script:
