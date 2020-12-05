@@ -1,0 +1,25 @@
+{
+  "name": "software-testing-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+<<<<<<< HEAD
+    "test": "nyc mocha --exit",
+=======
+    "test": "nyc mocha",
+>>>>>>> aa8d27eb344fa6b1b8cc196214e442b5f855f3a2
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  }
+}

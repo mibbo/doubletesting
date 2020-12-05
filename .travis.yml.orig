@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 14
+install:
+  - npm install
+before_script:
+<<<<<<< HEAD
+  - 'cat package.json'
+=======
+  - cat package.json
+>>>>>>> aa8d27eb344fa6b1b8cc196214e442b5f855f3a2
+script:
+  - npm test
+after_success:
+  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
