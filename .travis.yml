@@ -8,4 +8,4 @@ before_script:
 script:
   - npm test
 after_script:
-  - cat ./coverage/lcov.info
+  - cat ./coverage/lcov.info | coveralls
