@@ -1,0 +1,8 @@
+{
+  "reporter"   : ["text", "text-summary", "lcov", "html"],
+  "include"    : ["test/*"],
+  "exclude"    : [""],
+  "sourceMap"  : false,
+  "instrument" : true,
+  "all"        : true
+}
