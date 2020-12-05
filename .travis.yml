@@ -3,6 +3,8 @@ node_js:
   - node
 install:
   - npm install
+before_script:
+  - jscover
 script:
   - npm test
 after_script:

@@ -1,6 +1,6 @@
 {
   "reporter"   : ["text", "text-summary", "lcov", "html"],
-  "include"    : ["test/*"],
+  "include"    : ["src/**/*.js"],
   "exclude"    : [""],
   "sourceMap"  : false,
   "instrument" : true,
