@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc --reporter=text --reporter=lcov mocha --exit",
+    "test": "nyc --reporter=text --reporter=lcov mocha --exit | coveralls",
     "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "author": "",
