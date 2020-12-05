@@ -6,6 +6,5 @@ install:
 before_script:
   - npm --version
   - mocha --version
-  - chai --version
 script:
   - npm test
