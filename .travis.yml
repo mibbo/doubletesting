@@ -3,5 +3,9 @@ node_js:
   - 14
 install:
   - npm install
+before_script:
+  - 'cat package.json'
 script:
   - npm test
+after_success:
+  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
