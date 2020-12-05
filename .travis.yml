@@ -3,5 +3,9 @@ node_js:
   - 7
 install:
   - npm install
+before_script:
+  - npm --version
+  - mocha --version
+  - chai --version
 script:
   - npm test
