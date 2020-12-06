@@ -2,7 +2,7 @@
   "reporter"   : ["text", "text-summary", "lcov", "html"],
   "include"    : ["src/**/*.js"],
   "exclude"    : [""],
-  "sourceMap"  : false,
   "instrument" : true,
-  "all"        : true
+  "all"        : true,
+  "report-dir" : "coverage"
 }

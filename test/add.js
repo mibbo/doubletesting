@@ -4,6 +4,9 @@ import add from '../src/add.js';
 import chai from 'chai';
 const expect = chai.expect;
 
+// var add = require('../src/add.js');
+// var expect = require('chai').expect;
+
 describe('#add()', function () {
   it('should return number', function () {
     expect(add(10, 3)).to.be.a('number');
