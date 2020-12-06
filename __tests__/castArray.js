@@ -4,7 +4,7 @@ import castArray from '../src/castArray.js';
 
 describe('#castArray()', function() {
   test('should return array when an array is given as a parameter', function() {
-    expect(typeof castArray(['kissa', -23, 3])).toBe('array');
+    expect(Array.isArray(castArray(['kissa', -23, 3]))).toBe(true);
   });
 
   test('should return the same array when the array is given as a parameter', function() {

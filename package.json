@@ -12,6 +12,9 @@
     "coverageReporters": [
       "lcov",
       "text"
+    ],
+    "coveragePathIgnorePatterns": [
+      ".internal"
     ]
   },
   "author": "",
