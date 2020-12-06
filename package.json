@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "coveralls": "node --experimental-vm-modules node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | node --experimental-vm-modules ./node_modules/coveralls/.bin/coveralls && rm -rf coverage/"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "jest": {
     "collectCoverage": true,
