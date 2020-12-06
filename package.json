@@ -5,21 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js add.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["lcov", "text"]
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ]
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "chai": "^4.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "jest": "^26.6.3",
-    "mocha": "^8.2.1"
+    "jest": "^26.6.3"
   }
 }
