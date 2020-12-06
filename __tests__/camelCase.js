@@ -1,23 +1,21 @@
-/* test/camelCase.js */
+/* __tests__/camelCase.js */
 
 import camelCase from '../src/camelCase.js';
-import chai from 'chai';
-const expect = chai.expect;
 
 describe('#camelCase()', function() {
-  it('should return string', function() {
-    expect(camelCase('this is a string')).to.be.a('string');
+  test('should return string', function() {
+    expect(typeof camelCase('this is a string')).toBe('string');
   });
 
-  it('should return camel cased string from string with spaces', function() {
-    expect(camelCase('I want To be a Camel')).to.equal('iWantTobeACamel');
+  test('should return camel cased string from string with spaces', function() {
+    expect(camelCase('I want To be a Camel')).toBe('iWantTobeACamel');
   });
 
-  it('should return camel cased string with only letters from string with random marks and spaces', function() {
-    expect(camelCase('__I AM   t£he., fINA+<l...BosS!')).to.equal('iAmTheFinalBoss');
+  test('should return camel cased string with only letters from string with random marks and spaces', function() {
+    expect(camelCase('__I AM   t£he., fINA+<l...BosS!')).toBe('iAmTheFinalBoss');
   });
 
-  it('should return camel cased string without removing the numbers', function() {
-    expect(camelCase('mambo number 5')).to.equal('mamboNumber5');
+  test('should return camel cased string without removing the numbers', function() {
+    expect(camelCase('mambo number 5')).toBe('mamboNumber5');
   });
 });

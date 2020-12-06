@@ -1,36 +1,33 @@
-/* test/castArray.js */
+/* __tests__/castArray.js */
 
-import camelCase from '../src/castArray.js';
-import chai from 'chai';
 import castArray from '../src/castArray.js';
-const expect = chai.expect;
 
 describe('#castArray()', function() {
-  it('should return array when an array is given as a parameter', function() {
-    expect(castArray(['kissa', -23, 3])).to.be.an('array');
+  test('should return array when an array is given as a parameter', function() {
+    expect(typeof castArray(['kissa', -23, 3])).toBe('array');
   });
 
-  it('should return the same array when the array is given as a parameter', function() {
-    expect(castArray([1, 2, 3])).to.eql([1, 2, 3]);
+  test('should return the same array when the array is given as a parameter', function() {
+    expect(castArray([1, 2, 3])).toEqual([1, 2, 3]);
   });
 
-  it('should return specific array from string parameter', function() {
-    expect(castArray('koira')).to.eql(['koira']);
+  test('should return specific array from string parameter', function() {
+    expect(castArray('koira')).toEqual(['koira']);
   });
 
-  it('should return specific array from integer parameter', function() {
-    expect(castArray(2)).to.eql([2]);
+  test('should return specific array from integer parameter', function() {
+    expect(castArray(2)).toEqual([2]);
   });
 
-  it('should return specific array from boolean parameter', function() {
-    expect(castArray(true)).to.eql([true]);
+  test('should return specific array from boolean parameter', function() {
+    expect(castArray(true)).toEqual([true]);
   });
 
-  it('should return specific array from object parameter', function() {
-    expect(castArray({'age': 15})).to.eql([{'age': 15}]);
+  test('should return specific array from object parameter', function() {
+    expect(castArray({'age': 15})).toEqual([{'age': 15}]);
   });
 
-  it('should return empty array when called without parameters', function() {
-    expect(castArray()).to.eql([]);
+  test('should return empty array when called without parameters', function() {
+    expect(castArray()).toEqual([]);
   });
 });

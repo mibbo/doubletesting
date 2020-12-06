@@ -1,19 +1,17 @@
-/* test/capitalize.js */
+/* __tests__/capitalize.js */
 
 import capitalize from '../src/capitalize.js';
-import chai from 'chai';
-const expect = chai.expect;
 
 describe('#capitalize()', function() {
-  it('should return string', function() {
-    expect(capitalize('this is a string')).to.be.a('string');
+  test('should return string', function() {
+    expect(capitalize(typeof 'this is a string')).toBe('string');
   });
 
-  it('should return string with only first letter capitalized from a string with both cases', function() {
-    expect(capitalize('oMEnahiLLoPURisTIn')).to.equal('Omenahillopuristin');
+  test('should return string with only first letter capitalized from a string with both cases', function() {
+    expect(capitalize('oMEnahiLLoPURisTIn')).toBe('Omenahillopuristin');
   });
 
-  it('should return string with only first letter capitalized from a string with spaces', function() {
-    expect(capitalize('this is a string with spaces')).to.equal('This is a string with spaces');
+  test('should return string with only first letter capitalized from a string with spaces', function() {
+    expect(capitalize('this is a string with spaces')).toBe('This is a string with spaces');
   });
 });
