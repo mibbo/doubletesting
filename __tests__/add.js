@@ -1,12 +1,10 @@
 /* test/add.js */
 
 import add from '../src/add.js';
-import chai from 'chai';
-const expect = chai.expect;
 
 describe('#add()', function() {
-  it('should return number', function() {
-    expect(add(10, 3)).to.be.a('number');
+  test('should return number', function() {
+    expect(add(10, 3)).toBe(13);
   });
 
   it('should return 12 with two parameters, 4 and 8', function() {
