@@ -10,7 +10,14 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-        "src/*"
+        "src/*",
+        "!src/to*.js",
+        "!src/is*.js",
+        "!src/at.js",
+        "!src/get.js",
+        "!src/keys.js",
+        "!src/memoize.js",
+        "!src/reduce.js"
     ],
     "coverageReporters": [
       "lcov",
