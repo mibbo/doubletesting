@@ -13,7 +13,7 @@ describe('#words()', function () {
    });
 
    test('test undefined pattern', function () {
-      expect(words("asd", undefined)).toStrictEqual([]);
+      expect(words("asd", undefined)).toStrictEqual(["asd"]);
    });
 
 });
