@@ -11,10 +11,26 @@ describe('#eq()', function () {
    });
 
    test('should return an empty array', function () {
-      expect(eq(object, object)).toStrictEqual(true);
+      expect(eq(object, object)).toBe(true);
    });
 
    test('should return an empty array', function () {
-      expect(eq(object, other)).toStrictEqual(false);
+      expect(eq(object, other)).toBe(false);
+   });
+
+   test('should return an empty array', function () {
+      expect(eq(7, 7)).toBe(true);
+   });
+
+   test('should return an empty array', function () {
+      expect(eq(7, 'a')).toBe(false);
+   });
+
+   test('should return an empty array', function () {
+      expect(eq('a', Object('a'))).toBe(false);
+   });
+
+   test('test NAN', function () {
+      expect(eq(NaN, NaN)).toBe(true);
    });
 });
