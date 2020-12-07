@@ -12,6 +12,10 @@ describe('#words()', function () {
       expect(words('me, ollaan, testiapinoita ! #420 $¥[{]}', /[^, ]+/g)).toStrictEqual(['me', 'ollaan', 'testiapinoita', '!', '#420', '$¥[{]}']);
    });
 
+   test('test undefined pattern', function () {
+      expect(words("asd", undefined)).toStrictEqual([]);
+   });
+
 });
 
 describe('#asciiWords()', function () {
