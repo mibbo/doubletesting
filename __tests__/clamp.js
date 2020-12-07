@@ -7,6 +7,10 @@ describe('#clamp()', function() {
     expect(typeof clamp(20, -10, 25)).toBe('number');
   });
 
+  test('should return 0 when no boundaries are given', function() {
+    expect(clamp(20, 0, 0)).toBe(0);
+  });
+
   test('should return the same number as given when it was in bounds', function() {
     expect(clamp(30, 20, 45)).toBe(30);
   });
