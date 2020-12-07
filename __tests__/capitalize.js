@@ -4,7 +4,7 @@ import capitalize from '../src/capitalize.js';
 
 describe('#capitalize()', function () {
   test('should return string', function () {
-    expect(capitalize(typeof 'this is a string')).toBe('string');
+    expect(typeof capitalize('this is a string')).toBe('string');
   });
 
   test('should return string with only first letter capitalized from a string with both cases', function () {
